@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    /* font-family:sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /* background: #fff; */
+    /* color: #111; */
+    background: var(--bg);
+    color: var(--text);
+}
+
+
+/* 색감 */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --subtext: #6e6e73;
+  --line: #e8e8ed;
+  --card-bg: #fbfbfd;
+  --accent: #0071e3;
+}
+
+
+/*  ----------
+1. HEADER
+2. INTRO
+3. HERO
+4. PROJECTS
+5. CONTACT & FOOTER
+    ---------- */
+
+
+
+/* --------------------------------- HEADER --------------------------------- */
+.header {
+    background:#111;
+    color:#fff;
+    /*  */
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+/* --------------------------------- INTRO --------------------------------- */
+/* INTRO */
+.intro {
+    padding: 100px 40px;
+    text-align: center;
+}
+.intro h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.intro p {
+    color: #666;
+}
+
+
+
+
+/* --------------------------------- HERO --------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------- PROJECTS --------------------------------- */
+/* Projects */
+.projects {
+    padding:100px 20px;
+}
+
+.project {
+    margin:40px 0;
+    background: #fbfbfd;
+}
+.project a {
+    background:#111;
+    color:#fff;
+}
+
+
+.links {
+}
+.links a {
+    color: #111;
+    font-size: 14px;
+}
+
+
+

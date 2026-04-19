@@ -1,0 +1,51 @@
+body {
+    margin:0;
+    font-family:sans-serif;
+}
+/* ------------------------- */
+
+.hero {
+    height:80vh;
+    background:#ff4d4d;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.hero h1 {
+    font-size:60px;
+}
+/* ------------------------- */
+
+.products {
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:100px 20px;
+}
+.product {
+    width:250px;
+    text-align:center;
+}
+.product img {
+    width:100%;
+}
+/* ------------------------- */
+
+.price {
+    color:#ff0000;
+    font-weight:bold;
+}
+
+.coupon {
+    text-align:center;
+    padding:100px 20px;
+}
+
+button {
+    padding:15px 30px;
+    background:#111;
+    color:#fff;
+    border:none;
+}

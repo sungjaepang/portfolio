@@ -1,0 +1,81 @@
+
+
+/*  ----------
+1. HEADER
+2. INTRO
+3. HERO
+4. PROJECTS
+5. CONTACT & FOOTER
+    ---------- */
+
+
+
+/* --------------------------------- HEADER --------------------------------- */
+.header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:20px;
+}
+
+
+/* --------------------------------- INTRO --------------------------------- */
+
+
+
+
+/* --------------------------------- HERO --------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------- PROJECTS --------------------------------- */
+/* Projects */
+.projects {
+    text-align:center;
+    /*  */
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.project {
+    padding: 30px;
+}
+.project a {
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+}
+
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    /* 👇🏼내가 추가함 */
+    justify-content: center;
+}
+.links a {
+    /* margin-right: 15px; */
+    /*  */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 88px;
+    height: 40px;
+    padding: 0 16px;
+}
+
+
+
+
+/* --------------------------------- CONTACT & FOOTER --------------------------------- */
