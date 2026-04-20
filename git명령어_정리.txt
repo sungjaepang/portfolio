@@ -1,0 +1,139 @@
+⚠️ fatal: not a git repository
+👉🏼 지금 폴더에 .git 이 없음 (= Git 초기화 안 된 상태)
+
+작업 내용 push 할 때
+➡️ git add . ➡️ git commit -m "수정 내용" ➡️ git push
+
+GitHub 연결 시작
+1️⃣ git init				-> 
+2️⃣ git add .				->
+3️⃣ git commit -m "message"		->
+---------------------------------------------------------------------------
+☝🏼로컬 Git만 있는 상태
+👉🏼 GitHub Remote 추가 및 연결
+🔸 GitHub 들어가서
+🔸 New Repository
+🔸 이름 : e.g) 	react-apple-store
+🔸 Github에서 주소 복사
+https://github.com/아이디/프로젝트Repository이름.git
+---------------------------------------------------------------------------
+4️⃣ git remote add origin https://github.com/sungjaepang/portfolio
+5️⃣ git branch -M main
+6️⃣ git push -u origin main
+	⚠️ 혹여나 폴더 안 작업물을 무시하고 push 해야한다면
+	     git push -u origin main --force 👈🏼이 부분 추가!
+🔹
+🔹
+🔹 git pull   👉🏼 (협업 시) 작업 전 꼭 최신코드 가져오기.
+
+---------------------------------------------------------------------------
+이런 메시지가 보인다면...
+Committer: 방성재 <...>
+Your name and email address were configured automatically ...
+
+👉🏼
+🔹 git config --global user.name "방성재"
+🔹 git config --global user.email "깃허브이메일@example.com"
+---------------------------------------------------------------------------
+
+cd 프로젝트폴더 이름
+👉🏼 해당 프로젝트 폴더에 접근
+
+cd ..
+👉🏼 위치한 폴더의 상위폴더로 이동
+
+ls (≠LS,IS,is)
+👉🏼 현재 위치한 폴더 상태확인
+
+git status
+👉🏼 커밋할 작업물이 있는지 체크
+
+⚠️ git commit --amend -m "새 메시지"
+➡️ 실수해서 commit 메시지를 바꾸고 싶을 때
+
+⚠️ git add .
+⚠️ git commit --amend
+➡️ 파일 추가 안했는데 commit 했을 때
+
+⚠️ git add .
+⚠️ git commit -m "수정"
+⚠️ git push
+➡️ push 했는데 다시 수정하고 싶다면! (덮어쓰기 아니고 추가됨)
+
+cat .gitignore
+👉🏼 gitignore 내용 확인
+
+touch .gitignore
+👉🏼
+	+ printf "message" > .gitignore
+	👉🏼
+
+find . -maxdepth 3 -type d -name 파일이름
+👉🏼 어느 폴더에 해당 파일이 있는지 보여줌.
+
+find . -type f -size +20M
+👉🏼 20MB 넘는 파일들을 보여줌.
+
+find . -type f -exec du -h {} + | sort -hr | head -20
+👉🏼 큰 파일 순서대로 보여줌.
+
+⚠️ HTTPS 전송 문제가 생길 때
+🔹 git config --global http.version HTTP/1.1
+👉🏼
+
+du -sh .
+👉🏼 폴더 전체 용량 확인
+
+🔹 git pull origin main --rebase
+➡️ GitHub쪽 내용을 먼저 가져와서 내 커밋 위에 다시 얹음
+
+🔹 git rm -r --cached 파일이름
+➡️ 해당 파일을 Git 추적에서 빼기
+예시)	git rm -r --cached node_modules
+				dist
+
+🔹 git rev-parse --show-toplevel
+➡️ Git 저장소가 상위에 잡혀있는지 확인???
+	결과가 .../portfolio로 나올수도 있다 했었는데.. 안해봄
+
+🔹 rm -rf .git
+➡️ Git 연결을 지우기
+
+
+⚠️ 오해할 수도 있는 문제없는 경고 메시지
+- LF / CRLF
+LF will be replaced by CRLF
+👉🏼 그냥 윈도우 줄바꿈 차이 경고라서 무시해도 됨
+
+
+
+
+
+
+
+
+👍 다음 추천 단계
+이제 이거 하면 좋다:
+👉 GitHub Pages로 배포
+👉 README 포트폴리오 정리
+👉 프로젝트 2~3개 추가
+
+원하면 다음으로:
+👉 “GitHub Pages로 바로 사이트 띄우는 방법”
+👉 “포트폴리오 깃허브 구조 잡는 법”
+---------------------------------------------------------------------------
+🚀 다음 단계 (강력 추천)
+1️⃣ portfolio → GitHub Pages 배포
+2️⃣ index.html에서 각 repo 링크 연결
+3️⃣ README 정리
+
+👉 원하면 다음
+🔥 GitHub Pages 바로 배포
+🔥 index.html 포트폴리오 구조 잡기
+🔥 취업용 README 작성
+---------------------------------------------------------------------------
+원하면 다음으로:
+
+👉 “commit 구조 깔끔하게 만드는 법”
+👉 “포트폴리오 repo 구조 설계”
+---------------------------------------------------------------------------
