@@ -12,28 +12,56 @@
 <body>
 
     <section class="hero">
-        <h1>SPRING BIG SALE</h1>
-        <p>Up to 50% OFF</p>
-    </section>
-
-    <section class="products">
-        <div class="product">
-            <img src="images/shoes.jpg">
-            <h3>Running Shoes</h3>
-            <p class="price">79,000 → 39,000</p>
+        <div class="hero-inner">
+            <h1>SPRING BIG SALE</h1>
+            <p>Up to 50% OFF</p>
         </div>
-        <div class="product">
-            <img src="images/jacket.jpg">
-            <h3>Spring Jacket</h3>
-            <p class="price">129,000 → 69,000</p>
-        </div>
-    </section>
-
-    <section class="coupon">
-        <h2>Download Coupon</h2>
-        <button>GET COUPON</button>
     </section>
     
+    <section class="promo-products">
+        <h2>추천 상품</h2>
+        <div class="product-grid">
+            <article class="product-card">
+                <img src="images/running-shoes.jpeg" alt="상품 1" />
+                <h3>Running Shoes</h3>
+                <!-- <p class="price">79,000원 → 39,000원</p> -->
+                <strong class="price">79,000원 → 39,000원</strong>
+            </article>
+
+            <article class="product-card">
+                <img src="images/spring-jacket.jpeg" alt="상품 2">
+                <h3>Spring Jacket</h3>
+                <!-- <p class="price">129,000원 → 69,000원</p> -->
+                <strong class="price">129,000원 → 69,000원</strong>
+            </article>
+            
+            <article class="product-card">
+                <img src="images/daily-bag.jpeg" alt="상품 3">
+                <h3>Daily Bag</h3>
+                <!-- <p class="price">59,000원 → 29,000원</p> -->
+                <strong class="price">59,000원 → 29,000원</strong>
+            </article>
+            
+            <!-- <article class="product-card">
+                <img src="images/item4.jpg" alt="상품 4">
+                <h3>아이템 선정 필요함</h3>
+                <p class="price">31,000원 → 19,000원</p>
+            </article> -->
+        </div>
+    </section>
+
+    <section class="coupon-section">
+        <div class="coupon-box">
+            <p class="coupon-label">SPECIAL COUPON</p>
+            <h2>추가 10% 할인 쿠폰</h2>
+            <button id="couponBtn">쿠폰 받기</button>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>© 2026 Spring Promotion Event</p>
+    </footer>
+
     <script src="js/script.js"></script>
     
 </body>

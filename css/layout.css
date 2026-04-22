@@ -1,81 +1,115 @@
-
-
-/*  ----------
-1. HEADER
-2. INTRO
-3. HERO
-4. PROJECTS
-5. CONTACT & FOOTER
-    ---------- */
-
-
-
-/* --------------------------------- HEADER --------------------------------- */
-.header {
-    display:flex;
-    justify-content:space-between;
+/* 공통 너비 */
+.inner {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+  
+  /* HEADER */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding:20px;
-}
-
-
-/* --------------------------------- INTRO --------------------------------- */
-
-
-
-
-/* --------------------------------- HERO --------------------------------- */
-
-
-
-
-
-
-
-
-
-
-/* --------------------------------- PROJECTS --------------------------------- */
-/* Projects */
-.projects {
-    text-align:center;
-    /*  */
-    padding: 40px;
+    min-height: 64px;
+    padding: 20px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* HERO */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 72vh;
+    text-align: center;
+  }
+  
+  .hero-inner {
+    max-width: 860px;
+  }
+  
+  /* PROJECTS */
+  .projects {
+    padding: 40px 0 100px;
+  }
+  
+  .section-title {
+    margin-bottom: 32px;
+  }
+  
+  .project-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-}
-
-.project {
-    padding: 30px;
-}
-.project a {
-    display:inline-block;
-    margin-top:10px;
-    padding:10px 20px;
-}
-
-
-.links {
-    margin-top: 20px;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  
+  .project {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 28px;
+    align-items: center;
+  }
+  
+  .project-main {
+    grid-template-columns: 1.15fr 1fr;
+  }
+  
+  .project-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .links {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
-    /* 👇🏼내가 추가함 */
-    justify-content: center;
-}
-.links a {
-    /* margin-right: 15px; */
-    /*  */
-    display: inline-flex;
+  }
+  
+  /* CONTACT */
+  .contact .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     align-items: center;
-    justify-content: center;
-    min-width: 88px;
-    height: 40px;
-    padding: 0 16px;
-}
-
-
-
-
-/* --------------------------------- CONTACT & FOOTER --------------------------------- */
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+  }
+  
+  /* 반응형 */
+  @media (max-width: 1024px) {
+    .project,
+    .project-main {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-inner {
+      min-height: 56px;
+    }
+  
+    .nav {
+      gap: 14px;
+    }
+  
+    .hero {
+      min-height: 60vh;
+    }
+  
+    .projects {
+      padding: 32px 0 80px;
+    }
+  }

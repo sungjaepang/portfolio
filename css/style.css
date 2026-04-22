@@ -9,187 +9,194 @@
     섹션 여백: 넉넉하게
  */
 
-
+ /* 애플스타일로 하고싶다면 -> ??? */
  
-/* 애플스타일로 하고싶다면 */
-body {
-    line-height: 1.5;
-}
-h1, h2, h3 {
-    letter-spacing: -0.02em;
-    font-weight: 700;
-}
-p {
-    color: #6e6e73;
-}
-
-/*  ----------
-1. HEADER
-2. INTRO
-3. HERO
-4. PROJECTS
-5. CONTACT & FOOTER
-    ---------- */
+ /*  ----------
+ 1. HEADER
+ 2. INTRO
+ 3. HERO
+ 4. PROJECTS
+ 5. CONTACT & FOOTER
+     ---------- */
 
 
-/* --------------------------------- HEADER --------------------------------- */
+
+
+ /* HEADER */
 .header {
-    padding: 24px 40px;
-    /*  */
-        position: sticky;
-    top: 0px;
-    z-index: 10;
-    padding: 18px 24px;
-    border-bottom: 1px solid #e8e8ed;
-    /* background: rgba(255, 255, 255, 0.35); */
+    border-bottom: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.78);
     backdrop-filter: blur(12px);
-}
-
-/* --------------------------------- INTRO --------------------------------- */
-.intro {
-    padding: 120px 24px 80px;
-}
-.intro h2 {
-    margin-bottom: 16px;
-}
-.intro p {
-}
-
-
-
-
-
-/*  */
-nav ul {
-    display:flex;
-    gap:20px;
-    list-style:none;
-}
-
-/* --------------------------------- HERO --------------------------------- */
-.hero {
-    height:70vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    background:#111;
-    color:#fff;
-}
-
-.hero h2 {
-    font-size:60px;
-}
-
-
-
-
-/* --------------------------------- PROJECTS --------------------------------- */
-/* Projects */
-.projects {
-    padding: 40px 24px 100px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-.project {
-    padding: 32px;
-    border: 1px solid #eee;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-}
-.project a {
-    text-decoration:none;
-}
-.project h3 {
+  }
+  
+  .logo {
+    font-size: 18px;
+  }
+  
+  .nav a {
+    color: var(--subtext);
+    font-size: 15px;
+    transition: color 0.2s ease;
+  }
+  
+  .nav a:hover {
+    color: var(--text);
+  }
+  
+  /* HERO */
+  .hero {
+    background: #111;
+    color: #fff;
+  }
+  
+  .hero-label {
+    color: var(--accent);
+    font-size: 14px;
     margin-bottom: 12px;
-}
-.project p {
+  }
+  
+  .hero h2 {
+    font-size: 46px;
+    line-height: 1.25;
     margin-bottom: 20px;
-}
-
-.project-thumb {
+  }
+  
+  .hero-text {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.72);
+  }
+  
+  /* SECTION TITLE */
+  .section-title p {
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .section-title h2 {
+    font-size: 34px;
+  }
+  
+  /* PROJECT CARD */
+  .project {
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: var(--card-bg);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  }
+  
+  .project-main {
+    border-color: #dce8f8;
+    box-shadow: 0 10px 24px rgba(0, 113, 227, 0.05);
+  }
+  
+  .project-thumb {
     width: 100%;
-    /* 👇🏼이게 뭐지? */
     aspect-ratio: 16 / 10;
     object-fit: cover;
     border-radius: 18px;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.pjctRAS {
-}
-
-.pjctLP {
-        /* background: color image repeat position/size origin clip attachment; */
-    /* 정석👉🏼background: url(../images/pj2.jpg) no-repeat center / contain; */
-    /* 나는👉🏼*/background: url(../images/pj2.jpg) contain / center no-repeat;
-    /* ☝🏼 이렇게 쓰면 틀린 문법 */
-    /* */background: url(../images/pj2.jpg) center / contain no-repeat;
-
-    background-image: url(../images/pj2.jpg);
-    background-repeat: no-repeat;
-    background-position: center -20px;
-    background-size: cover;   /* contain \ cover \ px */
-    color: #fff;
-}
-
-
-.links {
-}
-.links a {
+  }
+  
+  .project-badge {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    min-height: 32px;
+    padding: 0 12px;
     border-radius: 999px;
-    background: #fff;
+    background: #e8f2ff;
+    color: var(--accent);
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  
+  .project-badge.sub {
+    background: #f0f0f2;
+    color: var(--subtext);
+  }
+  
+  .project h3 {
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+  
+  .project-desc {
+    margin-bottom: 16px;
+  }
+  
+  .project-meta {
+    list-style: disc;
+    padding-left: 18px;
+    margin-bottom: 24px;
+  }
+  
+  .project-meta li {
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  
+  .links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 88px;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 999px;
     border: 1px solid #d2d2d7;
+    background: #fff;
     color: #111;
-    text-decoration: none;
+    font-size: 14px;
     transition: background 0.2s ease, transform 0.2s ease;
-}
-.links a:hover {
-  background: #f5f5f7;
-  transform: translateY(-1px);
-}
-
-
-
-
-
-/* --------------------------------- CONTACT & FOOTER --------------------------------- */
-/* Contact */
-.contact {
-    padding: 80px;
+  }
+  
+  .links a:hover {
+    background: #f5f5f7;
+    transform: translateY(-1px);
+  }
+  
+  /* CONTACT */
+  .contact {
+    padding: 80px 0;
     text-align: center;
-    color: #666;
-}
-
-
-/* Footer */
-footer {
-    padding:40px;
-    text-align:center;
-    background:#eee;
-}
-
-
-
-
-
-/* Media Query */
-/*  반응형  */
-@media (max-width: 768px) {
-
-    .projects {
-        grid-template-columns: 1fr;
+    color: var(--subtext);
+  }
+  
+  /* FOOTER */
+  footer {
+    padding: 40px 20px;
+    background: #eee;
+    color: var(--subtext);
+  }
+  
+  /* 반응형 */
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 30px;
     }
-
-    .intro {
-        padding: 60px 20px;
+  
+    .hero-text {
+      font-size: 16px;
     }
-    
-}
+  
+    .section-title h2 {
+      font-size: 28px;
+    }
+  
+    .project {
+      padding: 18px;
+      border-radius: 20px;
+    }
+  
+    .project h3 {
+      font-size: 24px;
+    }
+  }

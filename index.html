@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Publisher Portfolio</title>
+    <title>Portfolio | Web Publisher & Frontend</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,78 +12,171 @@
     
     <!-- Header -->
     <header class="header">
-        <h1>Portfolio</h1>
-        <nav>
-            <ul>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <h1 class="logo">Portfolio</h1>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <!-- <ul>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul> -->
+            </nav>
+        </div>
     </header>
 
     <!-- Intro -->
-    <section class="intro">
+    <!-- <section class="intro">
         <h2>웹 퍼블리셔 & 프론트엔드 개발자</h2>
         <p>사용자 경험을 고려한 UI와 React 기반 인터랙션 구현에 강점이 있습니다.</p>
         <h3 style="margin-top: 40px;">현재 페이지는 PORTFOLIO 폴더의 index.html 입니다.</h3>
-    </section>
+    </section> -->
 
     <!-- ??? -->
-    <section class="hero">
-        <h2>Web Publisher</h2>
-        <p>Responsive Web / Interaction</p>
-    </section>
+    <main>
+        <section class="hero" id="about">
+            <div class="hero-inner inner">
+                <!-- <h2>Web Publisher</h2> -->
+                <!-- <p>Responsive Web / Interaction</p> -->
+                <p class="hero-label">Web Publisher & Frontend</p>
+                <h2>
+                    퍼블리싱 실무 경험을 바탕으로<br />
+                    React 기반 UI 구현까지 가능한 지원자입니다.
+                </h2>
+            </div>
+            <p class="hero-text">
+                이벤트 페이지 제작, 반응형 퍼블리싱, 쇼핑몰 UI 구성 경험을 바탕으로
+                실무에 가까운 포트폴리오를 제작했습니다.
+            </p>
+        </section>
+        
+        <section class="projects" id="projects">
+            <div class="section-title inner">
+                <p>Projects</p>
+                <h2>지원용 프로젝트 정리</h2>
+            </div>
+
+            <!-- <h2>Projects</h2> -->
+            <!-- <div class="project pjctRAS"> -->
+            <!-- <div class="project pjctRAS"> -->
+            <div class="project-list inner">
+                <article class="project project-main">
+                    <img src="images/react-apple-store.png" alt="React Apple Store 썸네일" class="project-thumb" />
+                    <div class="project-body">
+                        <p class="project-badge">Main Project</p>
+                        <h3>React Apple Style Store</h3>
+                        <p class="project-desc">
+                            React 기반 쇼핑몰 UI 프로젝트입니다.
+                            React Router를 활용한 페이지 이동, useState 기반 장바구니 기능,
+                            localStorage를 통한 데이터 유지까지 구현했습니다.
+                        </p>
+                        <ul class="project-meta">
+                            <li>React Router 기반 상품 리스트 / 상세 페이지 구성</li>
+                            <li>장바구니 추가 / 삭제 기능 구현</li>
+                            <li>localStorage를 통한 상태 유지</li>
+                            <li>반응형 UI 적용</li>
+                        </ul>
+                        <div class="links">
+                        </div>
+                        <div class="links">
+                            <!-- <a href="#" target="_blank">Live</a> -->
+                            <!-- <a href="https://sungjaepang.github.io/react-apple-store/" target="_blank" rel="noopener noreferrer">Live</a> -->
+                            <a href="https://sungjaepang.github.io/react-shop/" target="_blank" rel="noopener noreferrer">Live</a>
+                            <!-- <a href="#" target="_blank">GitHub</a> -->
+                            <!-- <a href="https://github.com/sungjaepang/react-apple-store" target="_blank" rel="noopener noreferrer">GitHub</a> -->
+                            <a href="https://github.com/sungjaepang/react-shop" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            
+                            <!-- rel="noopener noreferrer" -->
+                            <!-- ☝🏼 새 탭 보안처리 -->
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 서브 1 -->
+                <article class="project">
+                    <img src="images/pj2.png" alt="Landing Page 썸네일" class="project-thumb" />
+    <!-- <div class="project pjctLP"> -->
+                    <div class="project-body">
+                        <p class="project-badge sub">Publishing</p>
+                        <h3>Landing Page</h3>
+                        <p class="project-desc">
+                            애플 스타일을 참고해 제작한 제품 랜딩페이지입니다.
+                            시각적인 히어로 섹션과 섹션 간 흐름, 제품 중심 레이아웃에 집중했습니다.
+                        </p>
+                        <ul class="project-meta">
+                            <li>제품 중심 히어로 섹션 구성</li>
+                            <li>여백과 타이포 중심의 미니멀 레이아웃</li>
+                            <li>반응형 퍼블리싱 적용</li>
+                        </ul>
+                        <div class="links">
+    <!-- <a href="landing-page/index.html">View Project</a> -->
+    <!-- <a href="event-launch-page/index.html">View Project</a> -->
+                            <a href="event-launch-page/index.html" target="_blank" rel="noopener noreferrer">View Project</a>                    
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- 서브 2 -->
+                <article class="project">
+                    <img src="images/event-page-thumb.png" alt="Event Promotion Page 썸네일" class="project-thumb" />
+                    <div class="project-body">
+                        <p class="project-badge sub">Publishing</p>
+                        <h3>Event Promotion</h3>
+                        <p class="project-desc">
+                            프로모션 상품 노출과 CTA 구성 중심의 이벤트 페이지입니다.
+                            강한 히어로 비주얼과 상품 섹션, 쿠폰 영역을 포함해 정리했습니다.
+                        </p>
+                        <ul class="project-meta">
+                            <li>프로모션 히어로 섹션 구성</li>
+                            <li>상품 카드 섹션 및 쿠폰 버튼 구현</li>
+                            <li>반응형 이벤트 페이지 퍼블리싱</li>
+                        </ul>
+                        <div class="links">
+                            <!-- <a href="event-page/index.html">View Project</a> -->
+                            <!-- <a href="event-promotion-page/index.html">View Project</a> -->
+                            <a href="event-promotion-page/index.html" target="_blank" rel="noopener noreferrer">View Project</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 서브 3 -->
+                <article class="project">
+                    <img src="images/shop-main-thumb.png" alt="Shop Main Page 썸네일" class="project-thumb" />
+                    <div class="project-body">
+                        <p class="project-badge sub">Publishing</p>
+                        <h3>Shop Main Page</h3>
+                        <p class="project-desc">
+                            커머스 메인 페이지를 가정하고 제작한 반응형 퍼블리싱 프로젝트입니다.
+                            헤더, 메인 비주얼, 상품 카드 레이아웃 중심으로 구성했습니다.
+                        </p>
+                        <ul class="project-meta">
+                            <li>쇼핑몰 헤더 / 내비게이션 구성</li>
+                            <li>상품 그리드 레이아웃 구현</li>
+                            <li>반응형 UI 적용</li>
+                        </ul>
+                        <div class="links">
+                            <!-- <a href="shop-page/index.html">View Project</a> -->
+                            <!-- <a href="shop-main-page/index.html">View Project</a> -->
+                            <a href="shop-main-page/index.html" target="_blank" rel="noopener noreferrer">View Project</a>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+        
+    </main>
 
     <!-- Projects -->
-    <section class="projects">
-
-        <!-- <h2>Projects</h2> -->
-        <div class="project pjctRAS">
-            <img src="images/react-apple-store.jpg" alt="Ract Apple Store 썸네일" class="project-thumb" />
-            
-            <h3>React Apple Store</h3>
-            <p>React 기반 쇼핑몰 UI 프로젝트<br />
-                장바구니 및 localStorage 구현
-            </p>
-            
-            <div class="links">
-                <!-- <a href="#" target="_blank">Live</a> -->
-                <a href="https://sungjaepang.github.io/react-apple-store/" target="_blank" rel="noopener noreferrer">Live</a>
-                <!-- <a href="#" target="_blank">GitHub</a> -->
-                <a href="https://github.com/sungjaepang/react-apple-store" target="_blank" rel="noopener noreferrer">GitHub</a>
-                
-                <!-- rel="noopener noreferrer" -->
-                <!-- ☝🏼 새 탭 보안처리 -->
-            </div>
-        </div>
-        <div class="project pjctLP">
-            <h3>Landing Page</h3>
-            <!-- <a href="landing-page/index.html">View Project</a> -->
-            <a href="event-launch-page/index.html">View Project</a>
-
-            <!-- <div class="links">
-                <a href="https://sungjaepang.github.io/event-promotion-page/" target="_blank" rel="noopener noreferrer">Live</a>
-                <a href="https://github.com/sungjaepang/event-promotion-page" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div> -->
-        </div>
-        <div class="project">
-            <h3>Event Promotion</h3>
-            <p>이벤트 페이지 퍼블리싱</p>
-            <!-- <a href="event-page/index.html">View Project</a> -->
-            <a href="event-promotion-page/index.html">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Shop Main Page</h3>
-            <!-- <a href="shop-page/index.html">View Project</a> -->
-            <a href="shop-main-page/index.html">View Project</a>
-        </div>
-    </section>
 
     <!-- Contact -->
-    <section class="contact">
-        <p>✉️ Email : preadbear@gmail.com</p>
-        <p>📱 Phone : 010-5807-7170</p>
+    <section class="contact" id="contact">
+        <div class="inner">
+            <p>✉️ Email : preadbear@gmail.com</p>
+            <p>📱 Phone : 010-5807-7170</p>
+        </div>
     </section>
 
     <footer>
